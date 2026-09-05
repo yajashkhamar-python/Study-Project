@@ -1,0 +1,504 @@
+{
+  "users": [
+    {
+      "_id": "demo-user-123",
+      "name": "Demo Student",
+      "email": "demo@student.edu",
+      "passwordHash": "$2a$10$X87v1Z...mock",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "preferences": {
+        "dailyGoalMinutes": 120,
+        "subjects": [
+          "Mathematics",
+          "Physics",
+          "Computer Science"
+        ]
+      },
+      "reminderDaysBefore": 2,
+      "theme": "dark",
+      "timezone": "UTC"
+    },
+    {
+      "_id": "111",
+      "name": "Yajash",
+      "email": "yajash@gmail.com",
+      "passwordHash": "password123",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "preferences": {
+        "dailyGoalMinutes": 120,
+        "subjects": [
+          "Mathematics",
+          "Physics",
+          "Computer Science"
+        ]
+      },
+      "reminderDaysBefore": 2,
+      "theme": "dark",
+      "timezone": "UTC"
+    },
+    {
+      "_id": "112",
+      "name": "Yajash",
+      "email": "yajashkhamar@gmail.com",
+      "passwordHash": "password123",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "preferences": {
+        "dailyGoalMinutes": 120,
+        "subjects": [
+          "Mathematics",
+          "Physics",
+          "Computer Science"
+        ]
+      },
+      "reminderDaysBefore": 2,
+      "theme": "dark",
+      "timezone": "UTC"
+    },
+    {
+      "_id": "116",
+      "name": "Test User",
+      "email": "user_1786861821385@example.com",
+      "passwordHash": "password123",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "preferences": {
+        "dailyGoalMinutes": 120,
+        "subjects": [
+          "Mathematics",
+          "Physics",
+          "Computer Science"
+        ]
+      },
+      "reminderDaysBefore": 2,
+      "theme": "dark",
+      "timezone": "UTC"
+    }
+  ],
+  "tasks": [
+    {
+      "_id": "133",
+      "user": "112",
+      "title": "complete physics homework",
+      "description": "ch 5 mcqs ",
+      "subject": "physics",
+      "dueDate": "2026-09-07",
+      "priority": "urgent",
+      "status": "completed",
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 60,
+      "createdAt": "2026-09-04T07:11:31.093Z",
+      "completedAt": "2026-09-05T11:11:14.282Z"
+    },
+    {
+      "_id": "task-http-999",
+      "user": "demo-user-123",
+      "title": "STUDYPULSE_PERSISTENCE_TASK_HTTP_999",
+      "subject": "Mathematics",
+      "dueDate": "2026-08-16T06:21:51.638Z",
+      "priority": "high",
+      "status": "pending",
+      "createdAt": "2026-08-16T06:21:51.638Z"
+    },
+    {
+      "_id": "task-test-999",
+      "user": "demo-user-123",
+      "title": "STUDYPULSE_PERSISTENCE_TASK_12345",
+      "description": "Testing server restart persistence",
+      "subject": "Computer Science",
+      "dueDate": "2026-08-16T06:21:37.224Z",
+      "priority": "high",
+      "status": "pending",
+      "createdAt": "2026-08-16T06:21:37.224Z"
+    },
+    {
+      "_id": "100",
+      "user": "demo-user-123",
+      "title": "Complete Advanced Calculus Problem Set",
+      "description": "Solve exercises 1 through 15 in Chapter 4.",
+      "subject": "Mathematics",
+      "dueDate": "2026-08-18T06:20:56.805Z",
+      "priority": "high",
+      "status": "in-progress",
+      "tags": [
+        "Homework"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 90
+    },
+    {
+      "_id": "101",
+      "user": "demo-user-123",
+      "title": "Review Data Structures & Algorithms Graphs Chapter",
+      "description": "BFS, DFS, Dijkstra algorithms notes.",
+      "subject": "Computer Science",
+      "dueDate": "2026-08-20T06:20:56.805Z",
+      "priority": "urgent",
+      "status": "pending",
+      "tags": [
+        "Exam Prep"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 120
+    },
+    {
+      "_id": "102",
+      "user": "demo-user-123",
+      "title": "Quantum Mechanics Lab Report",
+      "description": "Submit PDF report for Experiment 3.",
+      "subject": "Physics",
+      "dueDate": "2026-08-15T06:20:56.805Z",
+      "priority": "medium",
+      "status": "completed",
+      "completedAt": "2026-08-16T06:20:56.805Z",
+      "tags": [
+        "Lab"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 60
+    },
+    {
+      "_id": "113",
+      "user": "112",
+      "title": "Complete Advanced Calculus Problem Set",
+      "description": "Solve exercises 1 through 15 in Chapter 4.",
+      "subject": "Mathematics",
+      "dueDate": "2026-08-18T06:28:40.114Z",
+      "priority": "high",
+      "status": "completed",
+      "tags": [
+        "Homework"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 90,
+      "completedAt": "2026-09-04T06:38:06.520Z"
+    },
+    {
+      "_id": "114",
+      "user": "112",
+      "title": "Review Data Structures & Algorithms Graphs Chapter",
+      "description": "BFS, DFS, Dijkstra algorithms notes.",
+      "subject": "Computer Science",
+      "dueDate": "2026-08-20T06:28:40.114Z",
+      "priority": "urgent",
+      "status": "completed",
+      "tags": [
+        "Exam Prep"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 120,
+      "completedAt": "2026-08-16T06:49:43.407Z"
+    },
+    {
+      "_id": "117",
+      "user": "116",
+      "title": "Complete Advanced Calculus Problem Set",
+      "description": "Solve exercises 1 through 15 in Chapter 4.",
+      "subject": "Mathematics",
+      "dueDate": "2026-08-18T06:30:21.457Z",
+      "priority": "high",
+      "status": "in-progress",
+      "tags": [
+        "Homework"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 90
+    },
+    {
+      "_id": "118",
+      "user": "116",
+      "title": "Review Data Structures & Algorithms Graphs Chapter",
+      "description": "BFS, DFS, Dijkstra algorithms notes.",
+      "subject": "Computer Science",
+      "dueDate": "2026-08-20T06:30:21.457Z",
+      "priority": "urgent",
+      "status": "pending",
+      "tags": [
+        "Exam Prep"
+      ],
+      "isRecurring": false,
+      "recurringInterval": "none",
+      "estimatedMinutes": 120
+    }
+  ],
+  "exams": [
+    {
+      "_id": "132",
+      "user": "112",
+      "subject": "Science",
+      "examDate": "2026-09-08",
+      "examTime": "09:00 AM",
+      "venue": "Room 404",
+      "syllabusNotes": "ch 1 to 10",
+      "colorTag": "#ec4899",
+      "createdAt": "2026-09-04T06:39:13.326Z"
+    },
+    {
+      "_id": "exam-http-999",
+      "user": "demo-user-123",
+      "subject": "STUDYPULSE_PERSISTENCE_EXAM_HTTP_999",
+      "examDate": "2026-08-16T06:21:51.638Z",
+      "examTime": "10:00 AM",
+      "venue": "Main Auditorium"
+    },
+    {
+      "_id": "exam-test-999",
+      "user": "demo-user-123",
+      "subject": "STUDYPULSE_PERSISTENCE_EXAM_12345",
+      "examDate": "2026-08-16T06:21:37.227Z",
+      "examTime": "10:00 AM",
+      "venue": "Hall A"
+    },
+    {
+      "_id": "103",
+      "user": "demo-user-123",
+      "subject": "Computer Science Midterm",
+      "examDate": "2026-08-21T06:20:56.805Z",
+      "examTime": "10:00 AM",
+      "venue": "Auditorium Hall B",
+      "syllabusNotes": "Data Structures, Trees, Graphs, Sorting Algorithms",
+      "linkedTasks": [],
+      "colorTag": "#6366f1"
+    },
+    {
+      "_id": "119",
+      "user": "116",
+      "subject": "Computer Science Midterm",
+      "examDate": "2026-08-21T06:30:21.457Z",
+      "examTime": "10:00 AM",
+      "venue": "Auditorium Hall B",
+      "syllabusNotes": "Data Structures, Trees, Graphs, Sorting Algorithms",
+      "linkedTasks": [],
+      "colorTag": "#6366f1"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "104",
+      "user": "demo-user-123",
+      "message": "Welcome to StudyPulse! Demo account successfully initialized.",
+      "type": "system",
+      "isRead": false,
+      "createdAt": "2026-08-16T06:20:56.805Z"
+    }
+  ],
+  "aiConversations": [
+    {
+      "_id": "135",
+      "user": "112",
+      "title": "Based on my current StudyPulse data, create a p...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Based on my current StudyPulse data, create a practical study plan for today.",
+          "createdAt": "2026-09-05T11:12:25.570Z"
+        }
+      ],
+      "createdAt": "2026-09-05T11:12:25.570Z",
+      "updatedAt": "2026-09-05T11:12:25.571Z"
+    },
+    {
+      "_id": "131",
+      "user": "112",
+      "title": "Based on my current StudyPulse data, create a p...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Based on my current StudyPulse data, create a practical study plan for today.",
+          "createdAt": "2026-08-16T07:13:34.625Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Hey Yajash! Great job staying on top of your workload so far—you’re already at a **67% completion rate** for your tasks today with zero overdue items! \n\nYour daily study target is **120 minutes**. Here is a balanced, high-impact study plan for today to complete your pending task and get ahead on your upcoming exams:\n\n---\n\n### 📅 **Today's 120-Minute Study Plan**\n\n#### **Session 1: Complete Pending Task (60 Minutes)**\n* **Subject:** Mathematics — **Calculus**\n* **Focus:** Deep work on your pending Calculus module/problems.\n* **Goal:** Clear this task out so your pending queue drops to zero.\n* **Recommended Technique:** 2 x 25-minute Pomodoro sessions with a 5-minute break in between.\n\n---\n\n☕ **Break: 10–15 Minutes** (Step away from the screen, stretch, or grab a snack)\n\n---\n\n#### **Session 2: Exam Prep — CS Midterm Focus (60 Minutes)**\n* **Subject:** Computer Science\n* **Upcoming Target:** CS Midterm on 21/8/2026 (Auditorium Hall B)\n* **Focus Topics for Today:** **Data Structures & Sorting Algorithms**\n* **Breakdown",
+          "createdAt": "2026-08-16T07:13:40.141Z"
+        },
+        {
+          "role": "user",
+          "content": "hello",
+          "createdAt": "2026-09-04T06:48:34.863Z"
+        },
+        {
+          "role": "user",
+          "content": "hello",
+          "createdAt": "2026-09-04T07:06:45.964Z"
+        }
+      ],
+      "createdAt": "2026-08-16T07:13:34.625Z",
+      "updatedAt": "2026-09-04T07:06:45.964Z"
+    },
+    {
+      "_id": "130",
+      "user": "demo-user-123",
+      "title": "Based on my current StudyPulse data, create a p...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Based on my current StudyPulse data, create a practical study plan for today.",
+          "createdAt": "2026-08-16T07:13:07.621Z"
+        },
+        {
+          "role": "assistant",
+          "content": " Here is a customized 120-minute study plan for today to help you tackle your overdue items and stay on track for your upcoming exams.\n\n---\n\n### 📊 Today's Focus",
+          "createdAt": "2026-08-16T07:13:13.188Z"
+        }
+      ],
+      "createdAt": "2026-08-16T07:13:07.621Z",
+      "updatedAt": "2026-08-16T07:13:13.188Z"
+    },
+    {
+      "_id": "129",
+      "user": "demo-user-123",
+      "title": "Based on my current StudyPulse data, create a p...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Based on my current StudyPulse data, create a practical study plan for today.",
+          "createdAt": "2026-08-16T07:12:13.372Z"
+        }
+      ],
+      "createdAt": "2026-08-16T07:12:13.372Z",
+      "updatedAt": "2026-08-16T07:12:13.372Z"
+    },
+    {
+      "_id": "128",
+      "user": "demo-user-123",
+      "title": "Based on my current StudyPulse data, create a p...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Based on my current StudyPulse data, create a practical study plan for today.",
+          "createdAt": "2026-08-16T07:11:26.724Z"
+        }
+      ],
+      "createdAt": "2026-08-16T07:11:26.724Z",
+      "updatedAt": "2026-08-16T07:11:26.724Z"
+    },
+    {
+      "_id": "127",
+      "user": "demo-user-123",
+      "title": "Based on my current StudyPulse data, create a p...",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Based on my current StudyPulse data, create a practical study plan for today.",
+          "createdAt": "2026-08-16T07:10:45.337Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Hello Demo Student! Here is your personalized, actionable study plan for today, tailored to fit your **120-minute daily goal** while tackling your most urgent pending/overdue tasks and preparing for your upcoming **Computer Science Midterm** on August 21st.\n\n---\n\n### 🎯 Today’s Focus Strategy\nYou currently have **120 minutes** target time today. To maximize efficiency and reduce backlogs, we will prioritize clearing your high-priority overdue tasks and making progress on high-yield exam preparation.\n\n---\n\n### 📅 Suggested Daily Plan (120 Minutes Total)\n\n#### **Session 1: Computer Science & Data Structures (60 mins)**\n*Priority: High / Urgent*\n\n* **0 – 30 mins:** Complete high-priority pending Computer Science task (`STUDYPULSE_PERSISTENCE_TASK_12345`).\n* **30 – 60 mins:** **CS Midterm Prep:** Begin reviewing the *Data Structures & Algorithms - Graphs Chapter* (Target: 30/120 mins total estimated time).\n  * *Tip:*",
+          "createdAt": "2026-08-16T07:10:51.241Z"
+        }
+      ],
+      "createdAt": "2026-08-16T07:10:45.337Z",
+      "updatedAt": "2026-08-16T07:10:51.241Z"
+    }
+  ],
+  "focusSessions": [
+    {
+      "_id": "134",
+      "user": "112",
+      "durationMinutes": 25,
+      "actualDurationMinutes": 1,
+      "mode": "work",
+      "subject": "physics",
+      "title": "complete physics homework",
+      "task": "133",
+      "completionStatus": "completed",
+      "accomplishment": "",
+      "completedAt": "2026-09-04T07:13:45.433Z",
+      "createdAt": "2026-09-04T07:13:45.433Z",
+      "updatedAt": "2026-09-04T07:13:45.433Z"
+    },
+    {
+      "_id": "105",
+      "user": "demo-user-123",
+      "durationMinutes": 25,
+      "mode": "work",
+      "subject": "Computer Science",
+      "completedAt": "2026-08-16T06:20:56.805Z"
+    },
+    {
+      "_id": "106",
+      "user": "demo-user-123",
+      "durationMinutes": 50,
+      "mode": "work",
+      "subject": "Mathematics",
+      "completedAt": "2026-08-15T06:20:56.805Z"
+    }
+  ],
+  "goals": [
+    {
+      "_id": "123",
+      "user": "112",
+      "title": "SS",
+      "description": "",
+      "category": "Academic",
+      "priority": "medium",
+      "status": "In Progress",
+      "startDate": "2026-08-16",
+      "targetDate": "2026-09-15T00:00:00.000Z",
+      "completedAt": null,
+      "milestones": [],
+      "createdAt": "2026-08-16T06:34:02.682Z",
+      "updatedAt": "2026-08-16T06:34:02.682Z"
+    },
+    {
+      "_id": "107",
+      "user": "demo-user-123",
+      "title": "Complete Data Structures Core Syllabus",
+      "description": "Master key data structures concepts and practice implementations.",
+      "category": "Academic",
+      "priority": "high",
+      "status": "In Progress",
+      "startDate": "2026-08-16T06:20:56.805Z",
+      "targetDate": "2026-09-15T06:20:56.805Z",
+      "completedAt": null,
+      "milestones": [
+        {
+          "_id": "108",
+          "title": "Arrays & Dynamic Arrays",
+          "completed": true,
+          "order": 0,
+          "completedAt": "2026-08-16T06:20:56.805Z"
+        },
+        {
+          "_id": "109",
+          "title": "Strings & Pattern Matching",
+          "completed": true,
+          "order": 1,
+          "completedAt": "2026-08-16T06:20:56.805Z"
+        },
+        {
+          "_id": "110",
+          "title": "Singly & Doubly Linked Lists",
+          "completed": false,
+          "order": 2
+        }
+      ],
+      "createdAt": "2026-08-16T06:20:56.805Z",
+      "updatedAt": "2026-08-16T06:20:56.805Z"
+    }
+  ],
+  "notes": [
+    {
+      "_id": "122",
+      "user": "112",
+      "title": "Abc",
+      "content": "ddcscs",
+      "subject": "General",
+      "tags": [],
+      "isPinned": false,
+      "isImportant": true,
+      "color": "#6366f1",
+      "wordCount": 1,
+      "createdAt": "2026-08-16T06:33:16.724Z",
+      "updatedAt": "2026-09-04T07:00:54.760Z"
+    }
+  ],
+  "idCounter": 136
+}
