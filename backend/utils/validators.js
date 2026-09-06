@@ -22,7 +22,10 @@ exports.taskValidation = [
   check('title', 'Task title is required').not().isEmpty().trim(),
   check('subject', 'Subject is required').not().isEmpty().trim(),
   check('dueDate', 'Valid due date is required').isISO8601().toDate(),
-  check('priority', 'Invalid priority level').optional().isIn(['low', 'medium', 'high', 'urgent']),
+  check('priority', 'Invalid priority level')
+    .optional()
+    .customSanitizer((val) => (typeof val === 'string' ? val.toLowerCase().trim() : val))
+    .isIn(['low', 'medium', 'high', 'urgent']),
   check('status', 'Invalid status').optional().isIn(['pending', 'in-progress', 'completed', 'overdue']),
 ];
 
