@@ -11,12 +11,16 @@ const protect = asyncHandler(async (req, res, next) => {
   ) {
     try {
       token = req.headers.authorization.split(' ')[1];
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      const secret = process.env.JWT_SECRET;
+      if (!secret) {
+        throw new Error('JWT_SECRET is missing in environment variables');
+      }
+      const decoded = jwt.verify(token, secret);
       req.user = await User.findById(decoded.id).select('-passwordHash');
       if (!req.user) {
         return res.status(401).json({ success: false, message: 'User no longer exists' });
       }
-      next();
+      return next();
     } catch (error) {
       console.error(error);
       return res.status(401).json({ success: false, message: 'Not authorized, token failed' });

@@ -6,6 +6,7 @@ dotenv.config();
 
 const connectDB = require('./config/db');
 const { setupInMemoryServer } = require('./mockServer');
+const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 const authRoutes = require('./routes/authRoutes');
 const aiRoutes = require('./routes/aiRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
@@ -31,6 +32,11 @@ app.get('/api/health', (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
+  if (process.env.NODE_ENV === 'production' && !process.env.JWT_SECRET) {
+    console.error('❌ FATAL ERROR: JWT_SECRET environment variable is missing in production mode.');
+    process.exit(1);
+  }
+
   const mongoConnected = await connectDB();
 
   if (mongoConnected) {
@@ -44,6 +50,9 @@ const startServer = async () => {
     app.use('/api/notes', noteRoutes);
     app.use('/api/notifications', notificationRoutes);
     app.use('/api/tasks', taskRoutes);
+
+    app.use(notFound);
+    app.use(errorHandler);
   } else {
     // Use the persistent local API only when MongoDB is unavailable.
     setupInMemoryServer(app);

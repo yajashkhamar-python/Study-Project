@@ -60,7 +60,8 @@ export const TasksPage = () => {
       setEditingTask(null);
       fetchTasks();
     } catch (err) {
-      addToast('Failed to save task', 'error');
+      const errorMsg = err.response?.data?.message || err.response?.data?.errors?.[0]?.message || 'Failed to save task';
+      addToast(errorMsg, 'error');
     }
   };
 

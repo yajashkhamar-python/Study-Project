@@ -512,8 +512,11 @@ const mockProtect = (req, res, next) => {
   }
 
   try {
-    const secret = process.env.JWT_SECRET || 'super_secret_study_planner_jwt_token_key_2026_prod';
-    const decoded = jwt.verify(token, secret);
+    const secret = process.env.JWT_SECRET;
+    if (!secret && process.env.NODE_ENV === 'production') {
+      throw new Error('JWT_SECRET is missing in environment variables');
+    }
+    const decoded = jwt.verify(token, secret || 'dev_secret_only');
     const foundUser = users.find((u) => u._id === decoded.id);
     req.user = foundUser || users[0];
     next();
