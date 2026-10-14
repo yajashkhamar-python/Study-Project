@@ -5,8 +5,6 @@
 <p align="center">
   <a href="https://study-project-jcpd-six.vercel.app/"><strong>🚀 Live Demo</strong></a>
   &nbsp; • &nbsp;
-  <a href="https://study-project-jcpd-six.vercel.app/login"><strong>🔐 Login / Register</strong></a>
-  &nbsp; • &nbsp;
   <a href="https://github.com/yajashkhamar-python/Study-Project"><strong>💻 GitHub Repository</strong></a>
 </p>
 
